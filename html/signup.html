@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="../output.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+      .message {
+          color: #ff4d4d;
+          font-family: 'Raleway', sans-serif;
+          font-size: 14px;
+          margin-top: 5px;
+          display: flex;
+          align-items: center;
+      }
+      .message .icon {
+          margin-right: 5px;
+      }
+    </style>
+</head>
+<body class="bg-[#E3EBD2] flex">
+    
+    <img class="hidden lg:flex h-screen w-[650px]" src="../images/loginhouse.jpg" alt="">
+    <div class="w-full flex my-auto">
+        <form id="form" class="flex flex-col mx-auto mt-[80px] lg:mt-0 w-[80%]" action="">
+            <h1 class="text-[40px] font-raleway leading-tight text-[#262523] mb-[30px] font-bold">CREATE AN ACCOUNT</h1>
+            
+            <label for="username" class="font-raleway font-semibold ml-2 mt-6 text-[18px] text-[#262523]">USER NAME</label>
+            <input id="username" placeholder="Name" type="text" class=" mt-4 bg-transparent xl:w-[550px] py-[10px] text-[18px] pl-4 placeholder:text-[#B3B2AE] placeholder:text-[15px] rounded-full border-2 border-[#262523]" name="username">
+            <div id="usernameMessage" class="message">
+                <span class="icon"></span>
+                <span class="text"></span>
+            </div>
+
+            <label for="email" class="font-raleway font-semibold ml-2 mt-6 text-[18px] text-[#262523]">EMAIL</label>
+            <input id="email" placeholder="User@email.com" type="email" class="mt-4 bg-transparent xl:w-[550px] py-[10px] text-[18px] pl-4 placeholder:text-[#B3B2AE] placeholder:text-[15px] rounded-full border-2 border-[#262523]" name="email">
+            <div id="emailMessage" class="message">
+                <span class="icon"></span>
+                <span class="text"></span>
+            </div>
+
+            <label for="password" class="font-raleway font-semibold ml-2 mt-6 text-[18px] text-[#262523]">PASSWORD</label>
+            <input id="password" placeholder="Password" type="password" class="mt-4 bg-transparent xl:w-[550px] py-[10px] text-[18px] pl-4 placeholder:text-[#B3B2AE] placeholder:text-[15px] rounded-full border-2 border-[#262523]" name="password">
+            <div id="passwordMessage" class="message">
+                <span class="icon"></span>
+                <span class="text"></span>
+            </div>
+
+            <p id="success" class="text-[15px] mt-2 ml-3 items-center flex justify-center font-raleway text-[#262523] font-semibold">
+            </p>
+            
+            <button type="submit" class="flex justify-center items-center hover:bg-[#262523] hover:duration-300 ease-in-out py-[20px] h-[50px] hover:text-[#E3EBD2] mt-[40px] xl:w-[550px] font-semibold text-[18px] rounded-full cursor-pointer border-2 border-[#262523]">
+                SUBMIT
+            </button>  
+
+            <h1 class="text-[15px] mt-3 ml-3 font-raleway text-[#262523] font-semibold">Already have an account? 
+                <span class="hover:cursor-pointer hover:text-[#B3B2AE] underline"><a href="login.html">Login</a></span>
+            </h1>
+        </form>
+    </div>
+    
+    <script src="../js/RegisterValidation.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta ="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction</title>
+    <link href="../output.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+      </style>
+      <style>
+        .underline-hover {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .underline-hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: #262523;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .underline-hover:hover::after {
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body class="bg-[#E3EBD2] w-[89%] flex flex-col mx-auto">
+    <!-- navbar -->
+    <nav class="bg-[#E3EBD2] fixed top-0 left-0 w-full z-50   flex  h-[70px] items-center  ">
+      <ul class="  flex font-semibold  mx-auto font-raleway justify-evenly w-[700px]">
+        <li class=" text-md cursor-pointer underline-hover"><a href="./home.html">HOME</a></li>
+        <li class=" text-md cursor-pointer underline-hover"><a href="./services.html">SERVICES</a></li>
+        <li class=" text-md cursor-pointer underline-hover"><a href="./contact.html">CONTACT</a></li>
+        <li class=" text-md cursor-pointer underline-hover"><a href="./about.html">ABOUT</a></li>
+        <li class=" text-md cursor-pointer underline-hover"><a href="./login.html">LOGIN</a></li>
+        <li class=" text-md cursor-pointer underline-hover"><a href="./signup.html">SIGNUP</a></li>
+      </ul>
+    </nav>
+    <!-- context text -->
+      <section class="  flex flex-col  mt-[70px]   ">
+        <h1 class=" text-[45px] tracking-widest  mt-8 font-semibold font-raleway">CONSTRUCT AND REPAIR...</h1>
+        <div class=" flex xl:flex-row flex-col-reverse items-center xl:justify-between">
+          <div class=" xl:w-[15%] text-balance ">
+            <p class=" text-[#6e6e6c] text-[18px] mt-6">
+              we design and build modern turkey modular houses according to your needs for living and recreation.
+            </p>
+          </div>
+          <h1 class=" text-[110px] leading-[110px]   font-bold ">YOUR DREAM HOUSE !</h1>
+        </div>
+      </section>
+      <!-- main image for wide screens -->
+      <img src="../images/h.png"  style="width: 99%; height: 25%;" class=" mx-auto hidden md:flex mt-[80px]"  alt="">
+      <!-- main image for small screens -->
+      <img src="../images/kitchen1.png" class=" mt-[120px] w-[350px] h-[360px] md:hidden mx-auto " alt="">
+
+      <!-- About section -->
+       
+      <section class=" flex flex-col lg:flex-row  mt-[120px]">
+        <article class=" mx-auto md:mx-0 max-w-[300px] min-w-[300px]">
+          <h1 class=" font-raleway font-bold text-[30px] ">
+            //ABOUT
+          </h1>
+            <p class=" mt-9 leading-7 text-md font-raleway font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quam corporis sint, quo hic magnam amet delectus itaque dicta labore inventore architecto dolorem ipsa doloremque perspiciatis numquam fugiat impedit cupiditate!
+            </p>
+            <button class=" hover:bg-[#262523] hover:duration-300 hover:ease-in-out hover:text-[#E3EBD2] mt-9 font-raleway font-semibold text-[17px] rounded-full w-[200px] py-1 cursor-pointer border-2 border-[#262523]">
+              Learn More
+            </button>
+        </article>
+
+        <div class="w-[35%]"></div>
+        <!-- Stats -->
+        <div class=" grid grid-cols-1 md:grid-cols-3 mt-[100px] mx-auto md:mx-0 gap-2 min-w-[300px]  md:min-w-[600px] md:mt-[20px] lg:gap-0 ">
+          <div class="  border-2 border-[#262523] flex flex-col hover:text-white hover:bg-[#262523] cursor-pointer text-[#262523]  hover:duration-300 ">
+            <div class=" mx-auto   font-raleway aspect-square leading-[55px]">
+              <p class=" text-[80px] mt-[70px] ">+100</p>
+              <p class=" text-center ">Completed projects</p>
+            </div>
+            
+          </div>
+
+          <div class=" lg:cursor-auto lg:border-0  lg:text-[#E3EBD2]  border-2 border-[#262523] flex flex-col lg:hover:text-[#E3EBD2] lg:hover:bg-[#E3EBD2] hover:text-white hover:bg-[#262523] cursor-pointer  text-[#262523] hover:duration-300 ">
+            <div class=" mx-auto   aspect-square leading-[55px]">
+              <p class=" text-center text-[80px] mt-[70px] ">15</p>
+              <p class=" text-center ">Years on the market</p>
+            </div>
+            
+          </div>
+          <div class="   border-2 border-[#262523] flex flex-col hover:text-white hover:bg-[#262523] cursor-pointer text-[#262523]   hover:duration-300  ">
+            <div class=" mx-auto   aspect-square leading-[55px]">
+              <p class=" text-center text-[80px] mt-[70px] ">23</p>
+              <p class=" text-center ">Professionals</p>
+            </div>
+            
+          </div>
+          <div  class="  hidden lg:flex lg:flex-col   aspect-square">
+
+          </div>
+          <div class=" hidden  border-2 border-[#262523] lg:flex flex-col hover:text-white hover:bg-[#262523] cursor-pointer  text-[#262523] hover:duration-300 ">
+            <div class=" mx-auto   aspect-square leading-[55px]">
+              <p class=" text-center text-[80px] mt-[70px] ">15</p>
+              <p class=" text-center ">Years on the market</p>
+            </div>
+            
+          </div>
+          <div class="  hidden lg:flex lg:flex-col   aspect-square">
+
+          </div>
+        </div>
+      </section>
+      <!-- Repair sectoin -->
+      <section class=" mx-auto md:mx-0 flex flex-col md:flex-row mt-[120px] ">
+        <!-- repair section image -->
+        <img src="../images/housecube2.png " class=" w-[350px] h-[360px] lg:w-[400px] lg:h-[400px] "    alt="">
+        <div class=" w-[30%]"></div>
+        <article class=" max-w-[300px] min-w-[300px] mt-[100px] md:mt-0 flex flex-col my-auto  ">
+          <h1 class=" font-raleway font-bold text-[30px] ">
+            //Repair
+          </h1> 
+            <p class=" mt-6 leading-7 text-md font-raleway font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quam corporis sint, quo hic magnam amet delectus itaque dicta labore inventore architecto dolorem ipsa doloremque perspiciatis numquam fugiat impedit cupiditate!
+            </p>
+            <button class=" hover:bg-[#262523] hover:duration-300 hover:ease-in-out hover:text-[#E3EBD2] mt-9 font-raleway font-semibold text-[17px] rounded-full w-[200px] py-1  cursor-pointer border-2 border-[#262523]">
+              Learn More
+            </button>
+        </article>
+      </section>
+     <!-- Construction section -->
+      <section class=" mx-auto md:mx-0 flex flex-col md:flex-row mt-[120px] ">
+        <article class=" max-w-[300px] min-w-[300px] flex flex-col my-auto  ">
+          <h1 class=" font-raleway font-bold text-[30px] ">
+            //Construction
+          </h1> 
+            <p class=" mt-6 leading-7 text-md font-raleway font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quam corporis sint, quo hic magnam amet delectus itaque dicta labore inventore architecto dolorem ipsa doloremque perspiciatis numquam fugiat impedit cupiditate!
+            </p>
+            <button class=" hover:bg-[#262523] hover:duration-300 hover:ease-in-out hover:text-[#E3EBD2] mt-9 font-raleway font-semibold text-[17px] rounded-full w-[200px] py-1   cursor-pointer border-2 border-[#262523]">
+              Learn More
+            </button>
+        </article>
+        <div class=" w-[30%]"></div>
+        <!-- construction section image -->
+        <img src="../images/housecube .png" class=" mt-[100px] md:mt-0 w-[350px] h-[360px] lg:w-[400px] lg:h-[400px] "    alt="">
+      </section>
+      <!-- footer -->
+      <footer class=" flex  justify-evenly mt-[200px] text-[#B3B2AE] rounded-t-[58px] bg-[#262523] py-8">  
+        <div>
+            <h1 class='  text-xl  font-semibold'>Solutions</h1>
+            <ul>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Analytics</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Marketing</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Commerce</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Insights</li>
+            </ul>
+        </div>
+        <div>
+            <h1 class='  text-xl  font-semibold'>Support</h1>
+            <ul>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Pricing</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Documentation</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Guides</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>API Status</li>
+            </ul>
+        </div>
+        <div>
+            <h1 class='  text-xl  font-semibold'>Company</h1>
+            <ul>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>About</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Blog</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Jobs</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Press</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Careers</li>
+            </ul>
+        </div>
+        <div>
+            <h1 class='  text-xl  font-semibold'>Legal</h1>
+            <ul>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Claim</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Policy</li>
+                <li class=' py-1 hover:translate-x-1 hover:duration-300 cursor-pointer text-md'>Terms</li>
+                
+            </ul>
+        </div>
+    </footer>     
+  </body>
+  
+</html>

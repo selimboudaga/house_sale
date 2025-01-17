@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link href="../output.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+      </style>
+      <style>
+        .underline-hover {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .underline-hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: #262523;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .underline-hover:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-[#E3EBD2] w-[89%] flex flex-col mx-auto"></body>>
+    <!-- navbar -->
+    <nav class="bg-[#E3EBD2] fixed top-0 left-0 w-full z-50   flex  h-[70px] items-center  ">
+        <ul class="  flex font-semibold  mx-auto font-raleway justify-evenly w-[700px]">
+            <li class=" text-md cursor-pointer underline-hover"><a href="./home.html">HOME</a></li>
+            <li class=" text-md cursor-pointer underline-hover"><a href="./services.html">SERVICES</a></li>
+            <li class=" text-md cursor-pointer underline-hover"><a href="./contact.html">CONTACT</a></li>
+            <li class=" text-md cursor-pointer underline-hover"><a href="./about.html">ABOUT</a></li>
+            <li class=" text-md cursor-pointer underline-hover"><a href="./login.html">LOGIN</a></li>
+            <li class=" text-md cursor-pointer underline-hover"><a href="./signup.html">SIGNUP</a></li>
+        </ul>
+      </nav>
+    <section class="mt-[70px] flex flex-col">
+        
+            <div class=" flex justify-evenly mt-[40px]">
+                <img src="../images/h1.png " class="mt-[21px] hidden md:flex w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] hover:scale-110 transition-all duration-500 ease-in-out cursor-pointer"    alt="">
+                <img src="../images/h2.png " class=" w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] hover:scale-110 transition-all duration-500 cursor-pointer ease-in-out "    alt="">
+                <img src="../images/h3.png" class="mt-[21px] w-[300px] h-[300px] lg:w-[350px] hidden lg:flex lg:h-[350px] hover:scale-110 transition-all duration-500 ease-in-out cursor-pointer" alt="">
+            </div>
+            <h1 class=" text-[60px] mx-auto  font-raleway text-[#262523] mt-2  font-bold md:text-center" >LET'S MAKE YOUR DREAM COME TRUE </h1>
+            <h1 class=" text-[40px] mx-auto md:text-center font-raleway text-[#262523]  font-bold" > WITH A BUTTON CLICK!</h1>
+            <div class=" flex-col md:flex-row flex mx-auto w-full md:w-[650px] justify-between">
+                <button class=" hover:bg-[#262523] duration-300 ease-in-out hover:text-[#E3EBD2] mt-8 font-raleway font-semibold text-[20px] rounded-full md:w-[280px] py-3  cursor-pointer border-2 border-[#262523]">
+                    Build My House
+                  </button>
+                  <button class=" hover:bg-[#262523] duration-300 ease-in-out hover:text-[#E3EBD2] mt-8 font-raleway font-semibold text-[20px] rounded-full md:w-[280px] py-3  cursor-pointer border-2 border-[#262523]">
+                    Fix My House
+                  </button>
+            </div>
+    </section>
+    <!-- Construction section -->
+    <section class=" mt-[120px]">
+        <h1 class=" font-raleway font-bold text-[35px] ">
+            //CONSTRUCTION
+        </h1>
+        <form action="">
+            <section class=" grid grid-cols-1  lg:grid-cols-3 gap-x-12">
+                <div class=" flex flex-col mt-10">
+                    <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">BUILDING TYPE</label>
+                    <input id="type" placeholder="TYPE" type="text" class=" mt-4 bg-transparent py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                </div>
+                <div class="flex justify-between w-full">
+                    <div class=" flex flex-col w-[61%] mt-10">
+                        <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">SQUARE FEET</label>
+                        <input id="type" placeholder="SQFT" type="text" class=" mt-4 bg-transparent    py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                    </div>
+                    <div class=" flex flex-col   mt-10">
+                        <label for="type" class=" text-nowrap font-raleway font-semibold  text-[16px] text-[#262523]">NUMBER OF FLOORS</label>
+                        <div class=" flex items-center ">
+                            <button class="flex justify-center items-center hover:bg-[#262523] hover:duration-300 ease-in-out hover:text-[#E3EBD2] mt-4 font-semibold text-[32px] rounded-full w-[53px] h-[53px] cursor-pointer border-2 border-[#262523]">
+                                -
+                            </button>
+                            <p class=" text-[#262523] mt-3 font-semibold mx-5 text-[26px]">2</p>
+                            <button class="flex justify-center items-center hover:bg-[#262523] hover:duration-300 ease-in-out hover:text-[#E3EBD2] mt-4 font-semibold text-[32px] rounded-full w-[53px] h-[53px] cursor-pointer border-2 border-[#262523]">
+                                +
+                            </button>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="flex justify-between w-full">
+                    <div class=" flex flex-col w-[61%] mt-10">
+                        <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">TERRACE</label>
+                        <input id="type" placeholder="YES/NO" type="text" class=" mt-4 bg-transparent    py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                    </div>
+                    <div class=" flex flex-col  mt-10">
+                        <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">BEDROOMS</label>
+                        <div class=" flex items-center ">
+                            <button class="flex justify-center items-center hover:bg-[#262523] hover:duration-300 ease-in-out hover:text-[#E3EBD2] mt-4 font-semibold text-[32px] rounded-full w-[53px] h-[53px] cursor-pointer border-2 border-[#262523]">
+                                -
+                            </button>
+                            <p class=" text-[#262523] mt-3 font-semibold mx-5 text-[26px]">3</p>
+                            <button class="flex justify-center items-center hover:bg-[#262523] hover:duration-300 ease-in-out hover:text-[#E3EBD2] mt-4 font-semibold text-[32px] rounded-full w-[53px] h-[53px] cursor-pointer border-2 border-[#262523]">
+                                +
+                            </button>
+                        </div>  
+                    </div>
+                </div>
+
+                
+                
+            </section>
+            
+            <section class=" grid grid-cols-1 lg:grid-cols-3 gap-x-12">
+                
+                <div class="flex justify-between w-full">
+                    <div class=" flex flex-col w-[45%] mt-10">
+                        <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">FIRST NAME</label>
+                        <input id="type" placeholder="First Name" type="text" class=" mt-4 bg-transparent    py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                    </div>
+                    <div class=" flex flex-col w-[45%] mt-10">
+                        <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">LAST NAME</label>
+                        <input id="type" placeholder="Last Name" type="text" class=" mt-4 bg-transparent    py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                    </div>
+                </div>
+                <div class=" flex flex-col mt-10">
+                    <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">PHONE NUMBER</label>
+                    <input id="type" placeholder="+216 XX.XXX.XXX" type="text" class=" mt-4 bg-transparent py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                </div>
+                <div>  
+                    <button class="flex justify-center  items-center hover:bg-[#262523] hover:duration-300 ease-in-out py-[25px] h-[50px] hover:text-[#E3EBD2] mt-[79px] font-semibold text-[20px] rounded-full w-full cursor-pointer border-2 border-[#262523]">
+                    SUBMIT
+                </button>  
+                </div>
+            </section>
+        </form>
+    </section>
+    <!-- image -->
+    <img src="../images/hhh2.jpg" class=" mt-[120px] hidden lg:flex h-[29%]" alt="">
+    <img src="../images/kitchen1.png" class=" lg:hidden mx-auto mt-[120px] w-[400px] h-[400px]" alt="">
+    <!-- Repair section -->
+    <form action="" class=" mt-[120px]">
+        <h1 class=" font-raleway font-bold text-[35px] ">
+            //REPAIR
+        </h1>
+        <section class=" grid grid-cols-1 lg:grid-cols-3 gap-x-12">  
+            <div class="flex justify-between w-full">
+                <div class=" flex flex-col w-[45%] mt-10">
+                    <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">FIRST NAME</label>
+                    <input id="type" placeholder="First Name" type="text" class=" mt-4 bg-transparent    py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                </div>
+                <div class=" flex flex-col  w-[45%] mt-10">
+                    <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">LAST NAME</label>
+                    <input id="type" placeholder="Last Name" type="text" class=" mt-4 bg-transparent    py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+                </div>
+            </div>
+            <div class=" flex flex-col mt-10">
+                <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">PHONE NUMBER</label>
+                <input id="type" placeholder="+216 XX.XXX.XXX" type="text" class=" mt-4 bg-transparent py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+            </div>
+            <div class=" flex flex-col mt-10">
+                <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">DEADLINE DATE</label>
+                <input id="type" placeholder="DD/MM/YYYY" type="text" class=" mt-4 bg-transparent py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+            </div>
+        </section>
+        <section class="flex flex-col lg:flex-row w-full">
+            <div class=" flex flex-col w-full lg:w-[66%] mt-10">
+                <label for="type" class=" font-raleway font-semibold  text-[16px] text-[#262523]">DESCRIPTION</label>
+                <input id="type" placeholder="DETAILS" type="text" class=" mt-4 bg-transparent py-[11px] text-[18px] pl-4 placeholder:text-[#B3B2AE] rounded-full border-2 border-[#262523]" name="type">
+            </div>
+            <div class="w-full lg:w-[31%]">  
+                <button class="flex justify-center  lg:ml-11  items-center hover:bg-[#262523] hover:duration-300 ease-in-out py-[25px] h-[50px]  hover:text-[#E3EBD2] mt-[50px] lg:mt-[79px] font-semibold rounded-full w-full cursor-pointer border-2 border-[#262523]"">
+                SUBMIT
+            </button>  
+            </div>
+        </section>
+    </form>
+    <!-- footer -->
+    <footer class=" flex flex-col  mt-[120px] text-[#B3B2AE] rounded-t-[58px] bg-[#262523] py-8"> 
+        <h1 class=" mx-auto font-bold font-raleway text-[20px]">DONT FORGET TO VISIT OUR SOCIALS</h1> 
+        <div class=" flex justify-evenly mx-auto mt-8 w-[70%] md:w-[60%] lg:w-[35%]">
+            <img src="../images/facebook.png" class=" w-[40px] h-[40px] md:w-[50px] md:h-[50px] cursor-pointer hover:scale-110 ease-in-out duration-300" alt="">
+            <img src="../images/instagram.png" class="  w-[40px] h-[40px] md:w-[50px] md:h-[50px] cursor-pointer hover:scale-110 ease-in-out duration-300" alt="">
+            <img src="../images/x.png" alt="" class="  w-[40px] h-[40px] md:w-[50px] md:h-[50px] cursor-pointer hover:scale-110 ease-in-out duration-300">
+            <img src="../images/youtube.png" class="  w-[40px] h-[40px] md:w-[50px] md:h-[50px] cursor-pointer hover:scale-110 ease-in-out duration-300" alt="">
+        </div>
+    </footer>  
+</body>
+</html>
