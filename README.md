@@ -28,6 +28,6 @@ Follow these simple steps to run the project locally:
 1. Clone the repository:  
    ```bash
    git clone <https://github.com/selimboudaga/house_sale.git>
-1. Clone the repository:  
+1. Start the live demo:  
    ***Open it with live server for a live demo***
 
